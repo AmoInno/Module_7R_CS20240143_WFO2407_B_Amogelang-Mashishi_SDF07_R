@@ -27,6 +27,7 @@ body{
     font-size: 1rem;
 }
 
+
 img{
     display: block;
     max-width: 100%;
@@ -64,6 +65,10 @@ section{
     padding: 5em 2em;
 }
 
+.section-title{
+    font-size: 4rem;
+}
+
 .section-subtitle-intro{
     background: var(--accent-color);
     color: var(--primary-color);
@@ -76,28 +81,54 @@ section{
 
 /* header */
 
-nav {
-    display: none;
+.nav{
+    background: var(--secondary-color);
+    padding: 10px 0;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav a:hover{
+    background: var(--primary-color);
+    color:var(--accent-color);
+    transition: var(--primary-color) 0.5s ease-in-out;
 }
 
 /* Introduction */
 
 .intro {
     position: relative;
+    max-width: 800px;
 }
 
 /* About me */
 
+
 .about-me{
     max-width: 1000px;
-    margin: 0 auto;
+    padding-top: 0;
 }
+
 
 .section-subtitle-about{
     background: var(--accent-color);
     color: var(--primary-color);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     width: fit-content;
 }
@@ -105,6 +136,7 @@ nav {
 .section-title-about{
     margin-bottom: 0;
 }
+
 /* Services */
 
 .my-services{
@@ -230,6 +262,8 @@ footer {
 footer a { color: inherit }
 /* Media queries */
 
+
+
 @media(min-width: 800px){
     .services{
       display: flex;
@@ -300,6 +334,22 @@ footer a { color: inherit }
         position: relative;
         z-index: 2;
     }
+}
 
+.portfolio-item-individual img{
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.portfolio-item-individual p {
+    padding: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-footer{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
