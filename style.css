@@ -27,19 +27,26 @@ body{
     font-size: 1rem;
 }
 
+.container{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid bisque;
+    border-color: white;
+    margin: 0 center;
+    max-width: 1200px;
+}
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 h1{
-    font-size: 4rem;
-    font-style: normal;
+    font-size: 3rem;
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h3{
@@ -52,29 +59,28 @@ strong{
 }
 
 .profile-picture-container {
-    width: 380px; 
-    height: 450px; 
-    border-radius: 150px 150px 0px 0px; 
-    box-shadow: var(--box-shadow-primary);
+    border-radius: 150px 150px 10px 10px; 
     overflow: hidden; 
+    max-width: 100%;
+    width: 100%;
 }
   
-
+div.profile-picture-container.intro-img{
+    margin-right: 20px;
+    margin-top: 20px;
+}
 
 section{
     padding: 5em 2em;
 }
 
-.section-title{
-    font-size: 4rem;
-}
-
-.section-subtitle-intro{
+.section-subtitle-intro,
+.section-subtitle-about{
     background: var(--accent-color);
     color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: bold;
-    width: fit-content;
+    width: 100%;
     padding: 0 20px 0 20px;
 }
 
@@ -111,31 +117,30 @@ section{
 /* Introduction */
 
 .intro {
-    position: relative;
-    max-width: 800px;
+    max-width: 1200px;
+    width: 100%;
+    
 }
 
+h1.section-title.section-title-intro{
+    margin-top: 150px;
+}
 /* About me */
 
-
-.about-me{
-    max-width: 1000px;
-    padding-top: 0;
+.about-me-body{
+    width: 500px;
 }
 
-
-.section-subtitle-about{
-    background: var(--accent-color);
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-    width: fit-content;
+.selfie{
+width: 200px;
+width: 100%;
 }
 
 .section-title-about{
     margin-bottom: 0;
 }
+
+
 
 /* Services */
 
@@ -280,7 +285,7 @@ footer a { color: inherit }
         display: grid;
         width:min-content;
         margin: 0 auto;
-        grid-column-gap: 20px;
+        grid-column-gap: 5px;
         grid-template-areas: 
         "img title"
         "img subtitle";
@@ -289,9 +294,18 @@ footer a { color: inherit }
     
     .profile-picture-container{
         grid-area: img;
-        min-width: 250px;
     }
 
+    div.profile-picture-container.intro-img{
+        width: 300px;
+        height: 350px;
+        margin-left: 0; 
+    }
+
+    div.profile-picture-container.about-me-img{
+        width: 1200px;
+        height: 300px;
+    }
 }
 
 @media (min-width: 800px) {

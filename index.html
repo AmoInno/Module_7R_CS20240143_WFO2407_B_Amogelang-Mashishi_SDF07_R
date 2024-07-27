@@ -1,160 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">   
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-</head>
-    <body>
-        <!--Header-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amogelang Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <!--Header-->
     <header>
-        <nav class="nav">
-            <ul class="nav-list">
-               <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
-               <li class="nav-item"><a href="#Services" class="nav-link">My services</a></li>
-               <li class="nav-item"><a href="#About" class="nav-link">About me</a></li>
-               <li class="nav-item"><a href="#Work" class="nav-link">My work</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#Services" class="nav-link">My services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link">About me</a>
+          </li>
+          <li class="nav-item"><a href="#Work" class="nav-link">My work</a></li>
+        </ul>
+      </nav>
     </header>
 
-            <!-- Introduction --> 
-           <section class="intro" id="Home">
+    <!-- Introduction -->
+    <section class="intro" id="Home">
+      <h1 class="section-title section-title-intro">
+        Hi, I am <br><strong>Amogelang Mashishi</strong>
+      </h1>
+      <div class="profile-picture-container intro-img">
+        <img
+          src="/images/blondie.jpg"
+          alt="picture of Amogelang Mashishi in blonde hair"
+        />
+      </div>
+    </section>
 
-            <h1 class="section-title section-title-intro">Hi, I am <strong>Amogelang Mashishi</strong></h1>
-            <p class="section-subtitle section-subtitle-intro">FRONT-END DEVELOPER</p>
-            <div class="profile-picture-container intro-img">
-                <img src="/images/blondie.jpg" alt="picture of Amogelang Mashishi in blonde hair">
-            </div>
+    <!--About me-->
 
-           </section> 
+    <section class="about-me" id="About">
+      <h2 class="section-title section-title-about">Who I am</h2>
+      <p class="section-subtitle section-subtitle-about">
+        Software developer student
+      </p>
+      <div class="about-me-body">
+        <p>
+          I am a dedicated and passionate software development student. My
+          inquisitive nature drives my passion for learning and love of
+          exploring new technologies.
+        </p>
+      </div>
+      <div class="profile-picture-container about-me-img">
+        <img
+          src="/images/grey.jpg"
+          alt="Amogelang Mashishi taking a mirror selfie"
+          class="selfie"
+        />
+      </div>
+    </section>
 
-                     <!--About me-->
+    <!-- Services -->
 
-                     <section class="about-me" id="About">
+    <section class="my-services" id="Services">
+      <h2 class="section-title section-title-services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design + development</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nemo
+            quibusdam dolorem aut beatae. Accusantium est provident numquam
+            assumenda veritatis aut maxime quos dolore sunt corporis repudiandae
+            nihil, fuga ipsa.
+          </p>
+        </div>
 
-                        <h2 class="section-title section-title-about">Who I am</h2>
-                        <p class="section-subtitle section-subtitle-about">Software developer student</p>
-                        <div class="about-me-body">
-                            <p>I am a dedicated and passionate software development student. My inquisitive nature drives my passion for learning and love of exploring new technologies.</p>
-                        </div>
-                        <div class="profile-picture-container about-me-img">
-                        <img src="/images/grey.jpg" alt="Amogelang Mashishi taking a mirror selfie" class="selfie" >
-            </div>
-                       </section>
+        <div class="service">
+          <h3>E-commerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            quae nobis reprehenderit maiores doloremque beatae velit deleniti
+            tenetur! Ab officia eius nostrum facere laudantium, illum voluptatum
+            ratione nam amet aspernatur.
+          </p>
+        </div>
 
-           <!-- Services -->
+        <div class="service">
+          <h3>Wordpress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi
+            non possimus voluptates, vitae totam ipsa, aliquam ipsum architecto,
+            veritatis ratione aut? Doloremque natus unde magni. Ab dolores
+            perspiciatis quasi!
+          </p>
+        </div>
+      </div>
+      <!--End of services-->
 
-           <section class="my-services" id="Services">
-            
-            <h2 class="section-title section-title-services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + development</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nemo quibusdam dolorem aut beatae. Accusantium est provident numquam assumenda veritatis aut maxime quos dolore sunt corporis repudiandae nihil, fuga ipsa.</p>
-                </div>
+      <a href="#Work" class="work-link">My Work</a>
+    </section>
 
-                <div class="service">
-                    <h3>E-commerce</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quae nobis reprehenderit maiores doloremque beatae velit deleniti tenetur! Ab officia eius nostrum facere laudantium, illum voluptatum ratione nam amet aspernatur.</p>
-                </div>
+    <!--My work-->
 
-                <div class="service">
-                    <h3>Wordpress</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi non possimus voluptates, vitae totam ipsa, aliquam ipsum architecto, veritatis ratione aut? Doloremque natus unde magni. Ab dolores perspiciatis quasi!</p>
-                </div>
+    <section class="my-work" id="Work">
+      <h2 class="section-title section-title-work">My work</h2>
+      <p class="section-subtitle section-subtitle-work"></p>
 
-            </div> <!--End of services-->
+      <div class="portfolio">
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-01.jpg" alt="" class="portfolio-img" />
+        </a>
 
-            <a href="#Work" class="work-link">My Work</a>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-02.jpg" alt="" class="portfolio-img" />
+        </a>
 
-           </section>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-03.jpg" alt="" class="portfolio-img" />
+        </a>
 
-           <!--My work-->
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-04.jpg" alt="" class="portfolio-img" />
+        </a>
 
-           <section class="my-work" id="Work">
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-05.jpg" alt="" class="portfolio-img" />
+        </a>
 
-            <h2 class="section-title section-title-work">My work</h2>
-            <p class="section-subtitle section-subtitle-work"></p>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-06.jpg" alt="" class="portfolio-img" />
+        </a>
 
-            <div class="portfolio">
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-01.jpg" alt="" class="portfolio-img">
-                </a>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-07.jpg" alt="" class="portfolio-img" />
+        </a>
 
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-02.jpg" alt="" class="portfolio-img">
-                </a>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-08.jpg" alt="" class="portfolio-img" />
+        </a>
 
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-03.jpg" alt="" class="portfolio-img">
-                </a>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-09.jpg" alt="" class="portfolio-img" />
+        </a>
 
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-04.jpg" alt=""class="portfolio-img" >
-                </a>
+        <a href="portfolio.html" class="portfolio-item">
+          <img src="/images/portfolio-10.jpg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+    </section>
 
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-05.jpg" alt=""class="portfolio-img" >
-                </a>
-                
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-06.jpg" alt="" class="portfolio-img">
-                </a>
+    <!--Footer-->
+    <footer>
+      <a href="mailto:amogelangmashishi12@gmail.com:" class="footer-link"
+        >amogelangmashishi12@gmail.com</a
+      >
 
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-07.jpg" alt="" class="portfolio-img" >
-                </a>
-
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-08.jpg" alt="" class="portfolio-img" >
-                </a>
-
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-09.jpg" alt="" class="portfolio-img" >
-                </a>
-
-                <a href="portfolio.html" class="portfolio-item">
-                    <img src="/images/portfolio-10.jpg" alt="" class="portfolio-img" >
-                </a>
-            </div>
-           </section>
-
-           <!--Footer-->
-           <footer>
-            
-           <a href="mailto:amogelangmashishi12@gmail.com:" class="footer-link">amogelangmashishi12@gmail.com</a>
-            
-            <ul class="social-list">
-
-                <li class="social-list-item"><a class="social-list-link" href="https://codepen.io/Amogelang-Mashishi">
-                    <i class="fa-brands fa-codepen"></i>
-                </a>
-                </li>
-                <li class="social-list-item"><a class="social-list-link" href="https://dribble.com">
-                    <i class="fa-brands fa-dribbble"></i>
-                </a>
-                </li>
-                <li class="social-list-item">
-                <a class="social-list-link" href="https://twitter.com">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                </li>
-                <li class="social-list-item"><a class="social-list-link" href="https://github.com/AmoInno">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                </li>
-
-            </ul>
-           </footer>
-    </body>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a
+            class="social-list-link"
+            href="https://codepen.io/Amogelang-Mashishi"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://dribble.com">
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://twitter.com">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://github.com/AmoInno">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    </div>
+  </body>
 </html>
